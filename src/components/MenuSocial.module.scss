@@ -1,25 +1,35 @@
 @import '../sass/utils/accessibility';
+@import '../sass/utils/media-queries';
 
 .MenuSocial {
   ul {
     list-style-type: none;
     padding: 0;
+    background: #373737;
 
     .SrOnly {
       @extend %sr-only;
     }
 
+    @include media-up(xs) {
+      display: flex;
+      justify-content: flex-end;
+    }
+
     li {
-      background: #373737;
       &:not(:last-of-type) {
         border-bottom: 1px solid #dedede;
+
+        @include media-up(xs) {
+          border-bottom: none;
+        }
       }
 
       a {
         display: block;
         color: white;
         text-decoration: none;
-        padding: 0.25rem;
+        padding: 0.5rem;
 
         &:hover {
           text-decoration: underline;
