@@ -1,7 +1,13 @@
+@import '../sass/utils/accessibility';
+
 .MenuSocial {
   ul {
     list-style-type: none;
     padding: 0;
+
+    .SrOnly {
+      @extend %sr-only;
+    }
 
     li {
       background: #373737;

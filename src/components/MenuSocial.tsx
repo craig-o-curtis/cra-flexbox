@@ -15,42 +15,42 @@ const MenuSocial = () => (
       <ul>
         <li>
           <a href="#">
-            <span className="sr-only" aria-hidden="true">
+            <span className={styles.SrOnly} aria-hidden="true">
               Twitter
-              <FaTwitterSquare />
             </span>
+            <FaTwitterSquare />
           </a>
         </li>
         <li>
           <a href="#">
-            <span className="sr-only" aria-hidden="true">
+            <span className={styles.SrOnly} aria-hidden="true">
               Facebook
-              <FaFacebookSquare />
             </span>
+            <FaFacebookSquare />
           </a>
         </li>
         <li>
           <a href="#">
-            <span className="sr-only" aria-hidden="true">
+            <span className={styles.SrOnly} aria-hidden="true">
               LinkedIn
-              <FaLinkedin />
             </span>
+            <FaLinkedin />
           </a>
         </li>
         <li>
           <a href="#">
-            <span className="sr-only" aria-hidden="true">
+            <span className={styles.SrOnly} aria-hidden="true">
               Youtube
-              <FaYoutube />
             </span>
+            <FaYoutube />
           </a>
         </li>
         <li>
           <a href="#">
-            <span className="sr-only" aria-hidden="true">
+            <span className={styles.SrOnly} aria-hidden="true">
               Instagram
-              <FaInstagramSquare />
             </span>
+            <FaInstagramSquare />
           </a>
         </li>
       </ul>
