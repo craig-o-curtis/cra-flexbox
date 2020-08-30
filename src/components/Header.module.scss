@@ -1,0 +1,30 @@
+.AppHeader {
+  background: dodgerblue;
+  color: white;
+
+  .NavItems {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    list-style-type: none;
+  }
+
+  .NavItem {
+  }
+
+  .NavLink {
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 0.5rem;
+
+    &.ActiveLink {
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    &:hover,
+    &:hover:focus {
+      background: rgba(0, 0, 0, 0.2);
+    }
+  }
+}
