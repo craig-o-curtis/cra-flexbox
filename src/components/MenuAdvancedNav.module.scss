@@ -1,0 +1,59 @@
+@import '../sass/utils/media-queries';
+
+.MenuAdvancedNav {
+  ul {
+    list-style-type: none;
+    padding: 0;
+
+    @include media-up(xs) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    li {
+      background: #373737;
+
+      &:not(:last-of-type) {
+        border-bottom: 1px solid #dedede;
+
+        @include media-up(xs) {
+          border: none;
+        }
+      }
+
+      @include media-up(xs) {
+        // display: flex;
+        flex: 1 0 12em;
+      }
+
+      a {
+        display: flex;
+        justify-content: flex-start;
+        color: white;
+        text-decoration: none;
+        padding: 0.25rem;
+
+        &:hover {
+          text-decoration: underline;
+          background: #787878;
+        }
+
+        .Icon {
+          flex: 0 0 1.5em; // ensures icon is always 1.5em
+          font-size: 1.8em;
+        }
+        .ButtonText {
+          font-size: 1.8em;
+
+          > span {
+            display: block;
+            font-size: 40%;
+            font-weight: lighter;
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@import '../sass/utils/media-queries';
+
+.MenuSingleLevel {
+  ul {
+    list-style-type: none;
+    padding: 0;
+    background: #373737;
+
+    @include media-up(xs) {
+      // width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    li {
+      @include media-up(xs) {
+        flex: 1 1 auto;
+        text-align: center;
+      }
+      &:not(:last-of-type) {
+        border-bottom: 1px solid #dedede;
+
+        @include media-up(xs) {
+          border-bottom: none;
+        }
+      }
+
+      a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 0.25rem 0.5rem;
+
+        &:hover,
+        &:hover:focus {
+          text-decoration: underline;
+          background-color: rgba(255, 255, 255, 0.2);
+        }
+      }
+    }
+  }
+}
