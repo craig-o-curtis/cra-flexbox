@@ -23,20 +23,20 @@ const Header = () => {
           </li>
           <li className={styles.NavItem}>
             <NavLink
-              to="/about"
-              className={styles.NavLink}
-              activeClassName={styles.ActiveLink}
-            >
-              About
-            </NavLink>
-          </li>
-          <li className={styles.NavItem}>
-            <NavLink
               to="/flex-menus"
               className={styles.NavLink}
               activeClassName={styles.ActiveLink}
             >
               Flex Menus
+            </NavLink>
+          </li>
+          <li className={styles.NavItem}>
+            <NavLink
+              to="/holy-grail"
+              className={styles.NavLink}
+              activeClassName={styles.ActiveLink}
+            >
+              Holy Grail
             </NavLink>
           </li>
         </ul>

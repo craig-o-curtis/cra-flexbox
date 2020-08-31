@@ -8,9 +8,9 @@ import {
 } from 'react-icons/fa';
 import styles from './MenuSocial.module.scss';
 
-const MenuSocial = () => (
+const MenuSocial = ({ showTitle = true }) => (
   <section className={`${styles.MenuSocial} menu-section`}>
-    <h2 className={`menu-heading`}>Social Menu</h2>
+    {showTitle && <h2 className={`menu-heading`}>Social Menu</h2>}
     <nav id="social-nav" className={`social-nav menu`} role="navigation">
       <ul>
         <li>
